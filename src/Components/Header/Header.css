@@ -1,5 +1,18 @@
-.logo{
-    height: 50px;
-    width: 50px;
-    padding-right: 10px;
+.navbar-brand img{
+    width: 120px;
+    height: 56px;
+    /* background-color: white; */
+    border-radius: 10px;
 }
+.navbar .navbar-nav .nav-item .nav-link:link, .navbar .navbar-nav .nav-item .nav-link:visited  {
+    color: #fff;
+    margin-right: 50px;
+    font-weight: bold;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover, .navbar .navbar-nav .nav-item .nav-link:active  {
+    /* border-bottom: 1px solid lightgrey; */
+    margin-right: 50px;
+    color: lightcoral;
+}
+
+

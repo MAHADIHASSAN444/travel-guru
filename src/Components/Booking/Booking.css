@@ -1,0 +1,10 @@
+.bookingForm{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form label{
+    color: darkgrey;
+    font-weight: bold;
+}

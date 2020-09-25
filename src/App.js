@@ -4,12 +4,15 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './Components/Home/Home';
 import Travelplace from './Components/Home/travelplace/Travelplace';
 import Booking from './Components/Booking/Booking';
 import Header from './Components/Header/Header';
+import fakeData from './Components/fakeData/fakeData';
+import Login from './Components/Login/Login';
+import Search from './Components/Search/Search';
+import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
 
 export const UserContext = createContext();
 
@@ -25,13 +28,22 @@ function App(props) {
               <Route path="/home">
                 <Home/>
                 </Route>
-                  <Route path="/travelplace">
-                 <Travelplace/>
-                </Route>
-              <Route path="/booking">
-             <Booking/>
+                  <Route path="/Login">
+                    <Login/>
+                    </Route>
+                      <Route path="/booking/:id">
+                      <Booking info={fakeData} />
+                    </Route>
+                   <PrivateRoute path="/search">
+                 <Search/>
+                </PrivateRoute>
+               <Route exact path="/">
+              <Home></Home>
             </Route>
-          </Switch>
+           <Route path="*">
+          <Travelplace></Travelplace>
+         </Route>
+       </Switch>
      </Router>
     </UserContext.Provider>
   );
@@ -39,11 +51,5 @@ function App(props) {
 
 export default App;
    
-{/* <Header></Header>
-<Home></Home>
-<Travelplace></Travelplace>
-<Booking></Booking>
-<h1>its working</h1>
-<h1> its working now ooooo also</h1> */}
 
 
