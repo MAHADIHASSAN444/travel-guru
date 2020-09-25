@@ -42,9 +42,14 @@ const Search = () => {
              }
 
             </div>
+            <div className="m-5">
+                <h1>Google Maps</h1>
+                <img src=" https://www.google.com/maps/place/Cox's+Bazar/@21.4508836,91.9328616,12z/data=!3m1!4b1!4m5!3m4!1s0x30adc7ea2ab928c3:0x3b539e0a68970810!8m2!3d21.4272283!4d92.0058074 " alt="" />
+            </div>
 
             
         </div>
+        
     );
 };
 
