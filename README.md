@@ -1,6 +1,7 @@
 # Travel Guru
 #### A travel agency website. Wherw people can book their visiting plase.
 ## Technology : Java Script , React.js, Firebase, Bootstrap,CSS
+## Features
 #### 1. React Router management
 #### 2. Manage Sign-in authentication by google
 #### 3. People can booking visiting plase 
